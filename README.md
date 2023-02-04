@@ -25,7 +25,7 @@ my nip5 certification
 
 因为我这个域名是购自国外，所以我是通过GithubPages进行，如果是自己服务器，可以参考这个->http://tools.zepo.re/ecdb1f34，原理上也就是在服务器上存一个json文件而已，重点可能就是在hex格式转换吧，我在这踩了个坑┭┮﹏┭┮
 
-![image-20230205062510100](C:\Users\Linzepore\Desktop\md笔记与日志\笔记\Damus\认证.assets\image-20230205062510100.png)
+![image-20230205062510100](https://s1.ax1x.com/2023/02/05/pS6PSit.png)
 
 _错误写法↑_
 
