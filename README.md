@@ -17,13 +17,17 @@ my nip5 certification
 
 ### 缺点
 
-优点显而易见，前者对不玩域名的兄弟来说是方便，但是在social上会出现未认证的效果；后者费钱。建议有能力的同学来尝试一下~（**装逼装到底 **）
+优点显而易见，前者对不玩域名的兄弟来说是方便，但是在social上会出现未认证的效果；后者费钱。建议有能力的同学来尝试一下~（~~装逼装到底~~）
 
 ## 自行搭建的方案
 
 ### 准备内容：DNS服务器、GitHub/服务器、域名
 
 因为我这个域名是购自国外，所以我是通过GithubPages进行，如果是自己服务器，可以参考这个->http://tools.zepo.re/ecdb1f34，原理上也就是在服务器上存一个json文件而已，重点可能就是在hex格式转换吧，我在这踩了个坑┭┮﹏┭┮
+
+![image-20230205062510100](C:\Users\Linzepore\Desktop\md笔记与日志\笔记\Damus\认证.assets\image-20230205062510100.png)
+
+_错误写法↑_
 
 如果选择国内域名，一些运营商可能要求备案，且服务器国内国外都可；如果选择国外域名，服务器只能选择国外的
 
@@ -52,9 +56,9 @@ my nip5 certification
 
 2. 创建新的 github 存储库，命名为`new`
 
-![image-20230205051317277](C:\Users\Linzepore\AppData\Roaming\Typora\typora-user-images\image-20230205051317277.png)
+![image-20230205051317277](https://s1.ax1x.com/2023/02/05/pS6CLse.png)
 
-![image-20230205051429500](C:\Users\Linzepore\AppData\Roaming\Typora\typora-user-images\image-20230205051429500.png)
+![image-20230205051429500](https://s1.ax1x.com/2023/02/05/pS6COqH.png)
 
 3. 将公钥或者私钥（为隐私保障，建议还是用公钥）复制之后，到网站[damus key converter](https://damus.io/key/)转换成十六进制
 4. 创建新文件 `new/.well-known/nostr.json`
@@ -79,12 +83,12 @@ include: [".well-known"]
 
 6. 在仓库名页面地址末端加上`/settings/pages`，也就是`github.com/[用户名]/[仓库名]/settings/pages`；或者直接点击该仓库的设置进入Pages设置
 
-![image-20230205053712552](C:\Users\Linzepore\AppData\Roaming\Typora\typora-user-images\image-20230205053712552.png)
+![image-20230205053712552](https://s1.ax1x.com/2023/02/05/pS6CjZd.png)
 
 7. 在"Build and deployment"下面选择 "Deploy from branch" ，然后选择 "Main/Master" 分支
 8. “Custom domain”这里填入域名并“Save”，同时勾上“Enforce HTTPS ”
 
-![image-20230205054136487](C:\Users\Linzepore\AppData\Roaming\Typora\typora-user-images\image-20230205054136487.png)
+![image-20230205054136487](https://s1.ax1x.com/2023/02/05/pS6CvdA.png)
 
 ### 测试及应用
 
@@ -104,7 +108,7 @@ include: [".well-known"]
 
 关于key的规定，是在第19个文档（[nips/19.md at master · nostr-protocol/nips (github.com)](https://github.com/nostr-protocol/nips/blob/master/19.md)）里面，设计安全性蛮高的，具体内容有兴趣进链接细看，我这里截出他的例子，可以看出，公钥、私钥最终转换成相同的十六进制的key，公钥私钥则在UI界面的操作
 
-![image-20230205054641985](C:\Users\Linzepore\AppData\Roaming\Typora\typora-user-images\image-20230205054641985.png)
+![image-20230205054641985](https://s1.ax1x.com/2023/02/05/pS6CxII.png)
 
 参考官方文档：
 
